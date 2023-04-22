@@ -1,10 +1,10 @@
-import os
-# ================================================== OPONAI ==================================================
-import openai
-import time
+# import os
+# # ================================================== OPONAI ==================================================
+# import openai
+# import time
 
-# Load your API key from an environment variable or secret management service
-openai.api_key = "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"
+# # Load your API key from an environment variable or secret management service
+# openai.api_key = "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"
 
 # response = openai.Completion.create(model="text-davinci-003", prompt="Say this is a test", temperature=0, max_tokens=7)
 
@@ -22,7 +22,7 @@ openai.api_key = "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"
 # Example of an OpenAI ChatCompletion request with stream=True
 # https://platform.openai.com/docs/guides/chat
 
-# # record the time before the request is sent
+# record the time before the request is sent
 # start_time = time.time()
 # # send a ChatCompletion request to count to 100
 # response = openai.ChatCompletion.create(
@@ -128,3 +128,16 @@ openai.api_key = "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"
 #         stream = video.streams.get_highest_resolution()
 #         stream.download('video_path/',filename_prefix='video')
 
+
+
+from PySide6.QtCore import QObject, Signal
+
+class MyObject(QObject):
+    my_signal = Signal(str)
+
+def my_slot(value):
+    print(value)
+
+obj = MyObject()
+obj.my_signal.connect(my_slot)
+obj.my_signal.emit("Hello, World!")

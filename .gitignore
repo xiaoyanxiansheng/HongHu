@@ -1,1 +1,6 @@
 build-Client-Desktop_Qt_6_5_0_MinGW_64_bit-Debug/
+Client/Client/Project/Scripts/__pycache__/
+Client/Client/Project/GUI/UI/__pycache__/
+*.pyc
+Client/.idea/
+Client/.vscode/

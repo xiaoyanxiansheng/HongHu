@@ -40,10 +40,6 @@ Project {
 
     qt6Project: true
 
-
-    /* Required for deployment */
-    targetDirectory: "/opt/Client"
-
     qdsVersion: "3.9"
 
     quickVersion: "6.2"
@@ -55,15 +51,8 @@ Project {
        files: Specifies target files for qsb tool. If path is included, it must be relative to this file.
               Wildcard '*' can be used in the file name part of the path.
               e.g. files: [ "content/shaders/*.vert", "*.frag" ]  */
-    ShaderTool {
-        args: "-s --glsl \"100 es,120,150\" --hlsl 50 --msl 12"
-        files: [ "content/shaders/*" ]
-    }
 
     multilanguageSupport: true
     supportedLanguages: ["en"]
     primaryLanguage: "en"
-
-
-    mainUiFile: "content/Content.qml"
 }

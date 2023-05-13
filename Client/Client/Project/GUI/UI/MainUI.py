@@ -13,5 +13,5 @@ class MainUI:
         AIChatUI(self._uiRoot)
 
         # 短视频
-        ShortVedioUI(self._uiRoot)
+        # ShortVedioUI(self._uiRoot)
 

@@ -4,3 +4,5 @@ Client/Client/Project/GUI/UI/__pycache__/
 *.pyc
 Client/.idea/
 Client/.vscode/
+Client/downloads/
+Client/dist/HongHu.exe
